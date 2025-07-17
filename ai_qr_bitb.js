@@ -116,7 +116,7 @@ app.get('/claim-now', async (req, res) => {
 
         // Calling Gemini API
         const genAI = new GoogleGenerativeAI("<google-gemini-api-key");
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+        const model = genAI.getGenerativeModel({ model: "<gemini-model-name>" }); // e.g: gemini-2.0-flash
 
 
         // 1st prompt
